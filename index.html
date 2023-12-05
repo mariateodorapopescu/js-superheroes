@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&lang=en" />
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+  <link rel="stylesheet" href="stylesheet.css">
+  <script type="text/javascript" src="script.js"></script>
+
+  <!--
+    -- TODO 0:
+    Adauga un titlu paginii web din browser, relevant pentru tematica de super eroi.
+    Foloseste eticheta pentru titlul.
+  -->
+  <title>Superheroes</title>
+
+</head>
+
+<body>
+
+  <!--
+    -- TODO 1:
+    Adauga un titlu in continutul paginii web.
+    Acesta ar trebui sa fie acelasi ca cel din browser, sau tot ceva relevant pentru tematica paginii.
+    Foloseste o eticheta care sa mareasca scrisul si sa il faca ingrosat.
+    Testeaza mai multe etichete de acest fel si observa diferentele de afisare intre acestea.
+  -->
+
+<h1>Superheroes</h1>
+
+  <div class="hero leftScreen" id="jean">
+    <div class="hero--left">
+      <div class="hero--image-container">
+        <img class="hero--image" src="img/Jean_Grey.jpg"/>
+        <img class="hero--image-back" src="img/Jean_Grey_2.jpg"/>
+        <!--
+          -- TODO 2:
+          Adauga inca o imagine cu clasa hero--image-back. Poza se gaseste in folderul img,
+          iar numele imaginii este Jean_Grey_2.jpg.
+          Foloseste-te de modelul imaginii adaugate mai sus.
+        -->
+
+      </div>
+    </div>
+
+    <div class="hero--right">
+      <div class="hero--right-inner">
+        <h2 class="hero--name">Jean Grey</h2>
+        <h4 class="hero--power">Power level:
+          <span>Omega-level mutant</span>
+        </h4>
+        <h4 class="line-spacing">Hero description:</h4>
+        <p>Jean is a member of a subspecies of humans known as mutants, who are born with superhuman abilities. She was born with telepathic and telekinetic powers. Her powers first manifested when she saw her childhood friend being hit by a car. She is a caring, nurturing figure, but she also has to deal with being an Omega-level mutant and the physical manifestation of the cosmic Phoenix Force. Jean experienced a transformation into the Phoenix in the X-Men storyline "The Dark Phoenix Saga". She has faced death numerous times in the history of the series. Her first death was under her guise as Marvel Girl, when she died and was "reborn" as Phoenix in "The Dark Phoenix Saga". This transformation led to her second death, which was suicide, though not her last. </p>
+        <!--
+          -- TODO 3:
+          Adauga un paragraf cu clasa hero--description in care sa zici cateva propozitii despre Jean Grey.
+          Poti cauta pe net despre personaj. Clasa pentru paragrafe se adauga exact ca la etichetele de mai sus.
+        -->
+
+        <div class="hero--details">
+          <h4>Abilities:
+            <span class="badge badge-purple">Telepathy</span>
+            <span class="badge badge-blue">Telekinesis</span>
+            <span class="badge badge-pink">The Phoenix Force</span>
+          </h4>
+          <div class="hero--details-left">
+            <h4>Allies:</h4>
+            <ul class="hero--allies">
+              <li>
+                <h5>Cyclops</h5>
+                <img src="img/small-cyclops.jpg" class="img-round" />
+              </li>
+              <li>
+                <h5>Havok</h5>
+                <img src="img/small-havok.jpg" class="img-round" />
+              </li>
+              <li>
+                <h5>Corsair</h5>
+                <img src="img/small-corsair.jpg" class="img-round" />
+              </li>
+              <li>
+                <h5>Storm</h5>
+                <img src="img/small-storm.jpg" class="img-round" />
+              </li>
+            </ul>
+          </div>
+          <div class="hero--details-right">
+            <h4>Enemies:</h4>
+            <ol class="hero--enemies">
+              <li>Stryfe</li>
+              <li>Genesis</li>
+              <li>Emma Frost</li>
+              <li>Apocalypse</li>
+            </ol>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <a class="hero--btn next" onclick="nextHero()" href="#">&#62;</a>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+
+  <div class="hero leftScreen" id="cyclops">
+    <a class="hero--btn previous" onclick="previousHero()" href="#">&#60;</a>
+    <div class="hero--left">
+      <div class="hero--image-container">
+        <img class="hero--image" src="img/Cyclops.jpg"/>
+        <img class="hero--image-back" src="img/Cyclops_2.jpg"/>
+      </div>
+    </div>
+    <div class="hero--right">
+      <div class="hero--right-inner">
+        <h2 class="hero--name">Cyclops</h2>
+        <h4 class="hero--power">Power level:
+          <span>Alpha-Level Mutant</span>
+        </h4>
+        <h4>Hero description:</h4>
+        <p class="hero--description">Cyclops is a member of a the mutants, and typically considered the first of the X-Men, a team of mutant heroes
+          who fight for peace and equality between mutants and humans, and one of the team's primary leaders. Cyclops can emit powerful beams of
+          energy from his eyes that he cannot control without the aid of special eyewear which he must wear at all times.</p>
+        <div class="hero--details">
+          <h4>Abilities:
+            <span class="badge badge-purple">Optic Blast</span>
+
+            <!-- TODO 4
+              Adauga aici inca 2 abilitati pentru Cyclops (de exemplu, Spatial Awareness sau Energy Resistance).
+              Urmeaza exemplul abilitatii adaugate mai sus, insa alege alte culori pentru badge (blue/pink).
+            -->
+            <span class="badge badge-blue">Spatial Awarness</span>
+            <span class="badge badge-pink">Energy Resistance</span>
+          </h4>
+          <div class="hero--details-left">
+            <h4>Allies:</h4>
+            <ul class="hero--allies">
+              <li>
+                <h5>Jean Grey</h5>
+                <img src="img/small-jeangrey.jpg" class="img-round" />
+              </li>
+              <li>
+                <h5>Havok</h5>
+                <img src="img/small-havok.jpg" class="img-round" />
+              </li>
+              <li>
+                <h5>Corsair</h5>
+                <img src="img/small-corsair.jpg" class="img-round" />
+              </li>
+              <li>
+                <h5>Storm</h5>
+                <img src="img/small-storm.jpg" class="img-round"/>
+              </li>
+              <!--
+                -- TODO 5
+                Adauga inca un element la lista neordonata de aliati.
+                Acum este vorba de Storm, a carei poza se gaseste in folderul img, sub denumirea de
+                small-storm.jpg. Te poti ghida dupa modelele aliatilor de mai sus.
+              -->
+
+            </ul>
+          </div>
+          <div class="hero--details-right">
+            <h4>Enemies:</h4>
+             <ol class="hero--enemies" type="1">
+               <li><h5>Magneto</h5></li>
+               <li><h5>Magik</h5></li>
+               <li><h5>Emma Frost</h5></li>
+               <li><h5>Apocalypse</h5></li>
+              <!--
+                -- TODO 6
+                Creeaza o lista ordonata cu inamicii lui Cyclops. Identifica lista prin numele clasei "hero--enemies".
+                Adauca 4 inamici pentru Cyclops (de exemplu, Magneto, Magik, Emma Frost sau Apocalypse).
+              -->
+
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <a class="hero--btn next" onclick="nextHero()" href="#">&#62;</a>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+
+  <div class="hero leftScreen" id="strange">
+    <a class="hero--btn previous" onclick="previousHero()" href="#">&#60;</a>
+    <div class="hero--left">
+      <div class="hero--image-container">
+        <img class="hero--image" src="img/Doctor_Strange.jpg"/>
+        <img class="hero--image-back" src="img/Doctor_Strange_2.jpg"/>
+      </div>
+    </div>
+    <div class="hero--right">
+      <div class="hero--right-inner">
+
+        <!-- TODO 7.0
+          Adauga inca un super erou, dupa modelul lui Jean Grey si Cyclops de mai sus.
+          Foloseste acelasi sablon ca pentru ceilalti doi eroi, si completeaza datele astel:
+        -->
+       <h2>Doctor Strange</h2>
+
+        <!-- TODO 7.1
+          Nume: Doctor Strange
+          Foloseste h1 (headingul asociat).
+        -->
+        <h4 class="hero--power">Power level:
+          <span>Master of Mystic Arts</span>
+        </h4>
+        <!-- TODO 7.2
+          Power level: Master of Mystic Arts
+          Foloseste un alt heading, in combinatie cu span.
+        -->
+
+        <!-- TODO 7.3
+          Poze: Doctor_Strange.jpg, Doctor_Strange_2.jpg
+          Adauga in .hero--image-container imaginile de mai sus, asociand clasele specifice
+        -->
+        <h4>Hero descrpition:</h4>
+        <p class="hero--description">
+        Once a highly successful, yet notably egotistical, surgeon, Doctor Stephen Strange endured a terrible accident that led him to evolve in ways he could have never foreseen.</p>
+        <!-- TODO 7.4
+          Hero description: (la alegere de pe net)
+          Adaug un heading pentru hero description, si un paragraf pentru textul gasit
+        -->
+        <div class="hero--details">
+          <h4>Abilities:
+            <span class="badge badge-purple"> Hypokinesis</span>
+            <span class="badge badge-pink">Time Manipulation</span>
+            <span class="badge badge-blue">Summoning</span>
+          </h4>
+        <!-- TODO 7.5
+          Abilitati: Hypokinesis, Time Manipulation, Summoning (sau altele de pe net)
+          Dupa ce adaugi un div cu clasa .hero--details, adauga abilitatile folosind span,
+          stilizand folosind culori.
+        -->
+        <div class="hero--details">
+          <h4>Allies:
+            <ul class="hero--allies">
+              <li><h5>Valkyrie</h5>
+              <img class="img-round" src="img/small-valkyrie.jpg"/>
+              </li>
+              <li><h5>Iron Man</h5>
+              <img class="img-round" src="img/small-ironman.jpg"/></li>
+              <li><h5>Hulk</h5>
+              <img class="img-round" src="img/small-hulk.jpg"/></li>
+              <li><h5>Scarlet Witch</h5>
+              <img class="img-round" src="img/small-scarletwitch.jpg"/></li>
+            </ul>
+          </h4>
+        </div>
+        <!-- TODO 7.6
+          Aliati: Valkyrie, Iron Man, Hulk, Scarlet Witch (insotiti de icon-uri din folderul img)
+          Nu uita sa adaugi un div pentru hero--details-left
+        -->
+        <div class="hero--details-right">
+          <h4>Enemies:</h4>
+           <ol class="hero--enemies" type="1">
+             <li><h5>Mordo</h5></li>
+             <li><h5>Kaecilius</h5></li>
+             <li><h5>Enchantress</h5></li>
+             <li><h5>Dormammu</h5></li>
+           </div>
+        <!-- TODO 7.7
+          Inamici: Mordo, Kaecilius, Enchantress, Dormammu
+          Foloseste o lista ordonata pentru inamici.
+        -->
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</body>
+
+</html>
