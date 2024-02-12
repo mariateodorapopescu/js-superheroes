@@ -1,7 +1,5 @@
 # Marvel Superhero Character Sheets
 
-Welcome to the Marvel Superhero Character Sheets web page! 🚀🦸‍♂️
-
 ## Overview
 
 This small web page is a delightful collection of character sheets featuring your beloved Marvel heroes. Dive into the superheroes folder to uncover fascinating details about their powers, backgrounds, and more.
@@ -13,7 +11,6 @@ This small web page is a delightful collection of character sheets featuring you
 3. **Enjoy the Journey:** Immerse yourself in the Marvel universe, one character sheet at a time.
 
 ## Explore Now
+ Simply access the web page, enter the superheroes folder!
 
-Ready to embark on this epic journey? Simply access the web page, enter the superheroes folder, and let the adventure begin!
-
-Feel free to share your favorite superhero character sheets with fellow Marvel enthusiasts. Enjoy the Marvel magic! ✨🌐
+Enjoy!
